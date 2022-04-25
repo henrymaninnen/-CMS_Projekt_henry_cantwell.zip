@@ -90,7 +90,7 @@ const addBook = async () => {
         let addBook = document.createElement("div");
       addBook.innerHTML += `
       <li>
-      <h3>Böcker ${} hyr ut</h3>
+      <h3>Låna ut bok</h3>
           <p>titel ${title.value}</p>
           <p>författare ${author.value}</p>
           <p>betyg ${rating.value}</p>
