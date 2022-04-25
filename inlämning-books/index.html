@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="U3TF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="profile-only">
+    <header>
+        <div>
+            <p class="user">Log in</p>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <h2>Registrera dig här:</h2>
+            <div>
+                <label for="registerUsername">Användarnamn</label>
+                <input type="text" id="registerUsername">
+            </div>
+            <div>
+                <label for="registerEmail">E-postadress</label>
+                <input type="email" id="registerEmail">
+            </div>
+            <label for="registerPassword">Lösenord</label>
+            <input type="text" id="registerPassword">
+            <button onclick="register()">Registrera</button>
+        </div>
+        <button onclick="logout()" class="logout-btn">Logga ut</button>
+
+    
+
+<!-- Logga in -->
+<div>
+    <h2>logga in här:</h2>
+    <div>
+       
+    </div>
+    <div>
+        <label for="identifier">E-postadress</label>
+        <input type="email" id="identifier">
+    </div>
+    <label for="password">Lösenord</label>
+    <input type="text" id="password">
+    <button onclick="login()">Logga in</button>
+</div>
+</div>
+<!-- ADD BOOKS
+    <div class="add-books" style="margin-top: 100px;">
+        <form>
+            <input type="text" class="book-title" placeholder="title">
+            <div class="book-type">
+                <label for="">text book</label>
+                <input type="radio" class="text-book">
+
+                <label for="">audio book</label>
+                <input type="radio" class="audio-book">
+            </div>
+            <div>
+                <label for="">book lenght</label>
+                <input type="text" class="text-book">
+
+                <label for="">book rating</label>
+                <input type="number" class="raing-book">
+
+                <label for="">book cover</label>
+                <input type="text" placeholder="kommer en bild">
+
+                <select name="book-genre" class="book-genre">
+                    <option value="placeholder">Book genre</option>
+                    <option value="1">horror</option>
+                    <option value="2">comedy</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    </main> -->
+
+<!-- Låna  böcker -->
+    <div class="container" style="margin-top: 100px;">
+        <h3>Låna böcker</h3>
+   <label for="title">title</label>
+   <input id="title" type="text">
+
+   <label for="author">author</label>
+   <input id="author" type="text">
+
+   <label for="rating">rating</label>
+   <input id="rating" type="text">
+
+   <label for="cover">cover</label>
+   <input id="cover" type="text">
+
+   <label for="genre">genre</label>
+   <input id="genre" type="text">
+
+   <label for="type">type</label>
+   <input id="type" type="text">
+
+   <label for="lenght">lenght</label>
+   <input id="lenght" type="text">
+</div>
+<button onclick="addBook()">KÖr</button>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>
