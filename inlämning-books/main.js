@@ -73,103 +73,12 @@ const logout = () => {
   }
 };
 
-//låna böcker
-
-// let title = document.querySelector("#title");
-// let author = document.querySelector("#author");
-// let rating = document.querySelector("#rating");
-// let image = document.querySelector("#image");
-// let genre = document.querySelector("#genre");
-// let type = document.querySelector("#type");
-// let lenght = document.querySelector("#lenght");
-
-// const reloadBooks = async () => {
-//   let response = await axios.get("http://localhost:1337/api/books", {
-
-//   });
-//   console.log(response.data);
-
-//     // //     let addBook = document.createElement("div");
-//     // //   addBook.innerHTML += `
-//     // //   <li>
-//     // //  <h3>Låna ut bok</h3>
-//     // //      <p>titel: ${title.value}</p>
-//     // //      <p>författare: ${author.value}</p>
-//     // //      <p>betyg: ${rating.value}</p>
-//     // //       <p>genre: ${genre.value}</p>
-//     // //       <p>film eller bok: ${type.value}</p>
-//     // //       <p>längd: ${lenght.value}</p>
-//     // //   </li> `
-//     // //   body.append(addBook);
-//     // //           console.log(response);
-// };
-// reloadBooks();
-//  const addBook = async () => {
-//      let response = await axios.post(
-//          "http://localhost:1337/api/books", {
-
-//           data:{
-//             title:title.value,
-//             author:author.value,
-//             rating:rating.value,
-//             genre:genre.value,
-//            type:type.value,
-//             lenght:lenght.value
-//           },
-
-//         }
-
-//config
-//             headers: {
-//                 Authorization: `Bearer ${sessionStorage.getItem("token")}`
-//             }
-//         })
-
-//               let image = document.querySelector("#image").files;
-//               let imgData = new FormData();
-//               imgData.append('files', image[0]);
-
-//               // Laddar upp bild till Strapi.
-//               let imageId = res.data[0].id;
-//            axios.post("http://localhost:1337/api/upload", imgData, {
-
-//                        //request body
-//                    data: {
-//                     image:imageId
-
-//                 }
-//             },
-//             {    headers: {
-//                       Authorization: `Bearer ${sessionStorage.getItem("token")}`
-//                   }
-//                 })
-
-//         let addBook = document.createElement("div");
-//       addBook.innerHTML += `
-//       <li>
-//       <h3>Låna ut bok</h3>
-//           <p>titel: ${title.value}</p>
-//           <p>författare: ${author.value}</p>
-//           <p>betyg: ${rating.value}</p>
-//           <p>genre: ${genre.value}</p>
-//           <p>film eller bok: ${type.value}</p>
-//           <p>längd: ${lenght.value}</p>
-//           </li> `
-//         body.append(addBook);
-//               console.log(response);
-//
 let renderBooks = async () => {
   let response = await axios.get("http://localhost:1337/api/books?populate=*");
   console.log(response.data);
 
   response.data.data.forEach((book) => {
-    // let title = document.querySelector("#title");
-    // let author = document.querySelector("#author");
-    // let rating = document.querySelector("#rating");
-    // let image = document.querySelector("#image");
-    // let genre = document.querySelector("#genre");
-    // let type = document.querySelector("#type");
-    // let lenght = document.querySelector("#lenght");
+
 
     let bookContainer = document.createElement("div");
     let title = document.createElement("h2");
