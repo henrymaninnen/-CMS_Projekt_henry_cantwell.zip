@@ -25,7 +25,7 @@ const register = async () => {
     console.log(response);
     sessionStorage.setItem("token", response.data.jwt);
     let userStatus = document.querySelector(".user");
-    userStatus.innerText =`hej ${response.data.user.username} <br> Din mail är ${response.data.user.email}`;
+    userStatus.innerText =`hej ${response.data.user.username}  Din mail är ${response.data.user.email}`;
     
 
 }

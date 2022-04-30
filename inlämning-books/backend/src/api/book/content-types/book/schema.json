@@ -21,14 +21,35 @@
     "rating": {
       "type": "integer"
     },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
     "genre": {
       "type": "string"
     },
     "type": {
-      "type": "string"
+      "type": "enumeration",
+      "enum": [
+        "audio",
+        "paper"
+      ]
     },
     "lenght": {
       "type": "string"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "books"
     }
   }
 }
