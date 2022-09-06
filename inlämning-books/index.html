@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="U3TF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="container">
+    <div class="reg-login">
+    <header>
+        <div>
+            <p class="user"></p>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <h2>REGISTRERA DIG</h2>
+            <h3></h3>
+            <div>
+                <label for="registerUsername">Användarnamn</label>
+                <input type="text" id="registerUsername">
+            </div>
+            <div>
+                <label for="registerEmail">E-postadress</label>
+                <input type="email" id="registerEmail">
+            </div>
+            <label for="registerPassword">Lösenord</label>
+            <input type="text" id="registerPassword">
+            <button onclick="register()" id="reg-btn">Registrera</button>
+            <p>har du ett konto, logga in nedanför</p>
+        </div>
+ 
+
+    
+
+<!-- Logga in -->
+<div>
+    <h2>LOGGA IN</h2>
+    <div>
+        <label for="identifier">E-postadress</label>
+        <input type="email" id="identifier">
+    </div>
+    <label for="password">Lösenord</label>
+    <input type="text" id="password">
+    <div class="button-wrapper">
+    <button onclick="login()">Logga in</button>
+    <button onclick="logout()" class="logout-btn">Logga ut</button>
+</div>
+<p id="register-popup">har du inte ett konto, registrera dig ovanför</p>
+</div>
+</div>
+<div class="books-container">
+    <h2>Böcker som finns för utlåning</h2>
+    <div>
+
+    </div>
+</div>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>
